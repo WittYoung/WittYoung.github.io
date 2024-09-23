@@ -1,0 +1,176 @@
+find_errors.html:
+LINE 1
+Error: No doctype
+Solution: <!DOCTYPE html>
+
+LINE 3
+Error: <html language="en"> in  header
+Solution: change "language" to "lang" and move to within the <html> tag
+
+LINE 4
+Error: No closing head tag
+Solution: add </head> before opening <body>
+
+LINE 9
+Error: no h1 closing tag
+Solution: add </h1> to the end of <h1>
+
+LINE 11
+Error: no p tag
+Solution: add <p>
+
+LINE 13/24
+Error: list element is ol (ordered) but its closed with ul (unordered) 
+Solution: the opening tag and closing tag of an element need to match <ol></ol>
+
+LINE 19
+Error: li elemetn is opened with wrong tag </li>
+Solution: Correct tag is <li>
+
+LINE 26
+Error: no p tag
+Solution: add </p> to the end of <p>
+
+LINE 28
+Error: image trying to be accessed is a .jpg not a .png
+Solution: correction is src = "image.jpg"
+
+LINE 28:
+Error: no alt tag
+Solution: <img src="image.jpg" alt="Image">
+
+LINE 30
+Error: </img> is the wrong ending tag
+Solution:</a>
+
+LINE 33
+Error: <table> and <tr> not on same indentation
+Solution: <table> and <tr> on same indentation then indent <th>
+
+LINE 39
+Error: missing backslash in table <td>25<td>
+Solution: use correct tag </td>
+
+LINE 45
+Error: table not closed with </table> tag
+Solution: <table></table> and contents of table inside
+
+LINE 47
+Error: img source="error.jpeg" "source" should be written "src" and jpeg should be jpg
+Solution: <img src="error.jpg" alt="Error Image">
+
+LINE 49
+Error: paragraph has no p tags and it needs to be strikethough
+Solution: <p></p> tags and <s></s> tags
+
+LINE 51
+Error: bgcolor is not the right attribute for the color of text you need style attribute
+Solution: style="background-color: lightgray; with the <p> element
+
+LINE 53
+Error: <input type="button" value="Click me"> button has no onclick action
+Solution 1: Add onclick action so when button is pressed it redirects user ex.
+<input type="button" value="Click me" onclick="window.location.href='find_errors_2.html'">
+
+LINE 55
+Error: <!-- This is a comment, no closing tag for comment
+Solution: <!-- This is a comment-->
+
+LINE 57
+Error: <a href="#">Link no closing a tag
+Solution: <a href="#">Link</a>
+
+LINE 59
+Error: <p><em>Underlined text</p></em> text needs to be underlined, not italicized
+Solution: use <u></u> (underline) tags
+
+LINE 62
+Error: <li>Descriptive Item Title</li> li tags are wrong for Descriptive item title
+Solution: <dt>Descriptive Item Title</dt>
+
+LINR 63
+Error:<li>Descriptive Item Text</li> li tags are wrong for Descriptive item text
+Solution:<dd>Descriptive Item Text</dd>
+
+LINE 65
+Error:  <h2 style="color:Tomato;">Hello World<h3> this correct except for the clsoing tag
+Solution: <h3> should be </h2> so, <h2 style="color:Tomato;">Hello World</h2>
+
+
+
+
+
+find_errors_2.html:
+
+LINE 2
+Error: within opening html tag needs to have lang declared
+Solution: <html lang="en">
+
+LINE 5
+Error: <h1>Welcome to the second Error Filled Page</h1> shouldnt be in head
+Solution: put header 1 within the body
+
+LINE 6
+Error: head closing tag is missing
+Solution: </head> before starting <body>
+
+LINE 7
+Error: <body , opening tag is missing a carrot
+Solution: <body> add carrot before and after body
+
+LINE 8
+Error: html tag in the wrong spot
+Solution: html tag should come right after DOCTYPE
+
+LINE 10
+Error: Div is indented 
+Solution: delete one indent, having code on the right indentation increases reliability
+
+LINE 11
+Error: no closing p tag
+Solution: add p closing tag to the end <p><strong>This is an important paragraph.</strong></p>
+
+LINE 11
+Error: no closing strong tag
+Solution: add strong closing tag and move opening tag to the beginning on the paragraph
+<p><strong>This is an important paragraph.</strong></p>
+
+LINE 12
+Error: Div tag needs to be closed
+Solution: </div> tag after paragraph
+
+LINE 13
+Error: <img href="image 2.jpg"> img tag does not use href attribute 
+Solution: img uses src attribute <img src="image 2.jpg">
+
+LINE 13
+Error: <img src="image 2.jpg"> image being called is wrong
+Solution: it should be image_2.jpg within the quotes (missing underscore)
+
+LINE 13
+Error: <img src="image_2.jpg"> missing an alt descriptor
+Solution: add alt image description <img src="image_2.jpg" alt="image 2">
+
+LINE 15
+Error: This is a heading</h2> missing h2 opening tag
+Solution: <h2>This is a heading</h2>
+
+LINE 17
+Error: Text</p> missing opening p tag
+Solution:<p>Text</p>
+
+LINE 17
+Error: <p>Text</p> on the wrong indentation
+Solution: tab over once
+
+LINE 18
+Error:<this is a comment> comment tag is wrong 
+Solution:<!--this is a commen--> comments tags look like this <!-- -->
+
+LINE 19
+Error: no closing body tag
+Solution: </body> before html closing tag
+
+LINE 20
+Error: </htm>, Closing html tag is missing "l" in html 
+Solution: </html> add "l"
