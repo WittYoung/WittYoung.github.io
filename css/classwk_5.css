@@ -1,0 +1,23 @@
+p {
+    color: blue;
+    font-family: sans-serif;
+    font-size: 150%
+}
+
+table {
+    background-color: purple;
+    border-style:solid;
+    border-color: black;
+}
+
+td {
+    border-style: solid;
+    border-color: black;
+}
+div{
+    color: pink;
+}
+
+h1.basics{
+    font-style: bold;
+}
