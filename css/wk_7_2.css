@@ -23,7 +23,14 @@
 
 /* ~~ this is where we apply grid styling ~~ */
 
-/* #my_grid{
+#my_grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:auto auto auto auto;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+}
+
+#unicorns_1{
+    grid-area: span 2/ span 3;
+    /*grid-column*/
+    /*grid row*/
 }

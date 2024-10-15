@@ -1,0 +1,61 @@
+body{
+    margin:0;
+}
+
+
+ul{
+    list-style: none;  /*gets rid of bullets*/
+    display:flex;
+    background-color: black;
+    margin:0;
+    padding: 10px;
+    justify-content:flex-end;
+}
+
+
+li a{
+     text-decoration:none; /*gets rid of underline*/
+     color: white;
+     padding: 10px 30px; /*first value: top/bottom, second value: left/right */
+     font-family: "josefin sans",sans-serif;
+     transition: color 1s;
+}
+
+
+li a:hover{
+    background-color: darkslategrey;
+}
+
+
+li a:active{
+    background-color:white;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 800px){ 
+
+    body{
+        background-color: limegreen;
+    }
+
+    ul{
+        flex-direction: column
+    }
+
+    li{
+        width: 100vw;
+        padding: 10px 30px; /*first value: top/bottom, second value: left/right */
+
+    }
+}
+
+@media screen and (min-width: 800px){
+
+}
+
+li a:hover{
+    background-color: darkslategrey;
+    color: yellow;
+}
