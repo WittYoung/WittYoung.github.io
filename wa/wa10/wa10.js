@@ -9,48 +9,50 @@ function randomValueFromArray(array) {
     return array[random];
 }
 
-// 2. RAW TEXT STRINGS
+// 2. RAW TEXT STRINGS (Updated Story and Variables)
 
-let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+let storyText = "One night it was 94 fahrenheit, :insertx: found themselves drawn to :inserty:. As they approached, they noticed :insertz:. it felt like 300 pounds weighing down on them. Bob took a deep breath and stepped closer, feeling a strange energy fill the air.";
 
-let insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
-let insertY = ["the soup kitchen", "Disneyland", "the White House"];
-let insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
+let insertX = ["Alien Joe", "Cucumber", "Tay-K"];
+let insertY = ["a bag of beans", "your house", "the entrance"];
+let insertZ = ["a faint Thom Yorke, lead singer of the band radiohead, in the distance", "a lil guy running around, super speedy", "an old guy lying on the ground, pointing somewhere unknown"];
+
+// 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
 // 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
 randomize.addEventListener('click', result);
 
 function result() {
-    // Create a fresh story each time the button is clicked
-    let newStory = storyText;
+  // Create a new story each time by copying storyText
+  let newStory = storyText;
 
-    // Randomly select items from each array
-    let xItem = randomValueFromArray(insertX);
-    let yItem = randomValueFromArray(insertY);
-    let zItem = randomValueFromArray(insertZ);
+  // Randomly select values from insertX, insertY, and insertZ arrays
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const zItem = randomValueFromArray(insertZ);
 
-    // Replace placeholders with the randomly selected items
-    newStory = newStory.replaceAll(':insertx:', xItem);
-    newStory = newStory.replace(':inserty:', yItem);
-    newStory = newStory.replace(':insertz:', zItem);
+  // Replace placeholders with selected values
+  newStory = newStory.replaceAll(':insertx:', xItem)
+                     .replace(':inserty:', yItem)
+                     .replace(':insertz:', zItem);
 
-    // Check if a custom name is entered, replace 'Bob' with that name
-    if (customName.value !== '') {
-        const name = customName.value;
-        newStory = newStory.replace('Bob', name);
-    }
+  // If a custom name is entered, replace "Bob" with it
+  if (customName.value !== '') {
+    const name = customName.value;
+    newStory = newStory.replace('Bob', name);
+  }
 
-    // Check if the UK radio button is selected, convert values to UK units
-    if (document.getElementById("uk").checked) {
-        const weight = Math.round(300 / 14) + ' stone';
-        const temperature = Math.round((94 - 32) * 5 / 9) + 'celsius';
+  // Convert values if UK is selected
+  if (document.getElementById("uk").checked) {
+    const weight = Math.round(300 * 0.0714286) + ' stone';  // Pounds to stones
+    const temperature = Math.round((94 - 32) * (5 / 9)) + ' celsius';  // Fahrenheit to Celsius
 
-        newStory = newStory.replace('300 pounds', weight);
-        newStory = newStory.replace('94 fahrenheit', temperature);
-    }
+    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('94 fahrenheit', temperature);
+  }
 
-    // Display the generated story
-    story.textContent = newStory;
-    story.style.visibility = 'visible';
+  // Display the final story
+  story.textContent = newStory;
+  story.style.visibility = 'visible';
 }
