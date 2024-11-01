@@ -44,7 +44,7 @@ function result() {
     // Check if the UK radio button is selected, convert values to UK units
     if (document.getElementById("uk").checked) {
         const weight = Math.round(300 / 14) + ' stone';
-        const temperature = Math.round((94 - 32) * 5 / 9) + ' centigrade';
+        const temperature = Math.round((94 - 32) * 5 / 9) + 'celsius';
 
         newStory = newStory.replace('300 pounds', weight);
         newStory = newStory.replace('94 fahrenheit', temperature);
