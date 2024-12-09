@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Photo Editing",
+        "src": "../portFinal/images/imageProject_1.jpg",
+        "alt": "layered photos of flowers",
+        "caption": "Photo editing for song lyrics with Adobe Photoshop."
+    },
+
+    {
+        "name": "Photo Editing",
+        "src": "../portFinal/images/imageProject_2.jpg",
+        "alt": "edited blurry photos with text",
+        "caption": "Photo editing for song lyrics with Adobe Photoshop."
+    },
+
+    {
+        "name": "Type Design",
+        "src": "../portFinal/images/magazineCover_project.png",
+        "alt": "New York Times magazine cover",
+        "caption": "New York Times digital article reproduced as a physical magazine in Adobe InDesign."
+    },
+
+    {
+        "name": "Type Design",
+        "src": "../portFinal/images/palindromeLogo.jpg",
+        "alt": "logo using the word tenet",
+        "caption": "Creating logos with palindromes in Adobe Illusrator."
+    },
+
+    {
+        "name": "Type Design",
+        "src": "../portFinal/images/lettermark.jpg",
+        "alt": "logo using the word tenet",
+        "caption": "Creating logos with palindromes in Adobe Illusrator."
+    },
+
+    {
+        "name": "Type Design",
+        "src": "../portFinal/images/menuRedesign.jpg",
+        "alt": "Barcalona Menu",
+        "caption": "Menu Redesign using Adobe InDesign."
+    },
+
+    {
+        "name": "Type Design",
+        "src": "../portFinal/images/bookCover.jpg",
+        "alt": "book cover",
+        "caption": "Redesigning a banned book using Adobe Illustrator."
+    },
+
+    {
+        "name": "Physical Computing",
+        "src": "../portFinal/images/wearableClimbFan.jpg",
+        "alt": "a fan that looks like a chalk bag",
+        "caption": "Using Arduino to create a hand motion detected climbing fan chalk bag."
+    },
+
+    {
+        "name": "Physical Computing",
+        "src": "../portFinal/images/fanMechanics.jpg",
+        "alt": "Arduino, breadboard, jumper wires, fan",
+        "caption": "The electronics that are within the chalk bag climbing fan."
+    }
+]
+
+
+
