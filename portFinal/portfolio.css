@@ -86,69 +86,69 @@ li.right {
     margin: 0 auto;
 }
 
-/* Updated Heading Section */
+
 #heading {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    align-items: center; 
     justify-content: flex-start; /* Align content to the left */
-    height: 400px; /* Adjust height as needed */
-    /* padding: 2rem; /* Add spacing around content */
-    background-color: #f4f4f4; /* Neutral background for the section */
-    overflow: hidden; /* Prevent overflow issues */
+    height: 400px; 
+    /* padding: 2rem; */
+    background-color: #f4f4f4; 
+    overflow: hidden;
 }
 
 /* Left-side photo */
 .heading-background {
-    flex: 0 0 20%; /* Fix the image width to 20% of the container */
-    height: 100%; /* Full height of the section */
-    background-image: url("/portFinal/images/realshot.jpg"); /* Replace with your image path */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    margin: 0; /* Ensure the image touches the left side */
+    flex: 0 0 20%; 
+    height: 100%; 
+    background-image: url("/portFinal/images/realshot.jpg");
+    background-size: cover; 
+    background-position: center;
+    margin: 0; 
 }
 
-/* Right-side text */
+
 #heading div {
-    flex: 1; /* Allow the text to take up the remaining space */
-    padding-left: 2rem; /* Add spacing between image and text */
+    flex: 1; 
+    padding-left: 2rem; 
 }
 
 #heading h1 {
-    font-size: 5rem; /* Make the heading text larger */
-    color: #273469; /* Dark blue text color */
+    font-size: 5rem; 
+    color: #273469; 
     margin: 0;
     padding: 0;
-    text-align: left; /* Align text to the left */
-    line-height: 1.2; /* Tighten spacing between lines */
+    text-align: left;
+    line-height: 1.2; 
 }
 
 
 #intro {
-    background-color: #30343F; /* Dark gray background */
-    color: #FAFAFF; /* White text for contrast */
-    padding: 4rem 2rem; /* Add padding for breathing room */
+    background-color: #30343F; 
+    color: #FAFAFF; 
+    padding: 4rem 2rem; 
 }
 
 .intro-content {
-    max-width: 800px; /* Limit paragraph width for readability */
-    margin: 0 auto; /* Center content horizontally */
+    max-width: 800px; 
+    margin: 0 auto; 
     position: relative;
 }
 
 .intro-content h2,
 .intro-content p {
-    margin-left: -50px; /* Align both to the same off-center left position */
+    margin-left: -50px; 
 }
 
 .intro-content h2 {
-    font-size: 2rem; /* Large text size for the heading */
-    text-align: left; /* Align heading text to the left */
+    font-size: 2rem; 
+    text-align: left; 
     margin-bottom: 1rem;
 }
 
 .intro-content p {
-    font-size: 1.25rem; /* Larger paragraph font for readability */
-    line-height: 1.6; /* Improve line spacing */
+    font-size: 1.25rem; 
+    line-height: 1.6; 
     margin-top: 0;
 }
 
@@ -156,44 +156,44 @@ li.right {
 
 /* Portfolio item and image styling */
 #portfolio-item {
-    text-align: center; /* Center the content */
-    margin-top: 2rem; /* Add space above */
+    text-align: center; 
+    margin-top: 2rem; 
 }
 
 #portfolio-image {
-    max-width: 100%; /* Image will not exceed the container's width */
-    max-height: 400px; /* Limit the height while maintaining the aspect ratio */
-    object-fit: contain; /* Ensures the image fits within the box without distortion */
-    margin: 0 auto; /* Center the image */
-    display: block; /* Ensures proper centering */
-    border-radius: 10px; /* Optional: rounded corners */
+    max-width: 100%; 
+    max-height: 400px; 
+    object-fit: contain; 
+    margin: 0 auto; 
+    display: block; 
+    border-radius: 10px; 
 }
 
 
 #portfolio-caption {
-    font-size: 1.5rem; /* Caption font size */
-    color: black; /* Set caption text color to black */
-    position: relative; /* Align with other elements */
-    margin-bottom: 1rem; /* Space below caption */
-    font-weight: bold; /* Make caption text bold */
+    font-size: 1.5rem; 
+    color: black;
+    position: relative; 
+    margin-bottom: 1rem; 
+    font-weight: bold; 
 }
 
 /* Button styling */
 #generate {
-    font-size: 2rem; /* Make button text larger */
-    padding: 1rem 2rem; /* Increase padding for a bigger button */
-    background-color: #E4D9FF; /* Button background color */
-    color: #273469; /* Text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    display: block; /* Make button a block-level element */
-    margin: 2rem auto; /* Center the button horizontally */
-    text-align: center; /* Ensure text is centered */
+    font-size: 2rem; 
+    padding: 1rem 2rem; 
+    background-color: #E4D9FF; 
+    color: #273469; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    display: block; 
+    margin: 2rem auto; 
+    text-align: center; 
 }
 
 #generate:hover {
-    background-color: #273469; /* Change background color on hover */
+    background-color: #273469; 
     color: #E4D9FF;
 
 }

@@ -93,17 +93,17 @@ li.right {
     justify-content: center;
     height: calc(100vh - 70px); /* Full height minus navbar height */
     background-color: #FFFFFF;
-    padding: 20px; /* Add some padding for spacing */
+    padding: 20px; 
     box-sizing: border-box; /* Include padding in total width/height */
-    overflow: hidden; /* Prevent anything from overflowing the container */
+    overflow: hidden;
 }
 
 #resume-image {
-    width: 35%; /* Set image width to 50% of the page width */
-    max-width: 600px; /* Optional: set a maximum width for larger screens */
-    height: auto; /* Maintain aspect ratio */
-    border: 1px solid #ccc; /* Optional: border around the image */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for aesthetics */
+    width: 35%; 
+    max-width: 600px; 
+    height: auto; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 footer {
