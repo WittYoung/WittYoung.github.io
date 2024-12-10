@@ -110,33 +110,38 @@ li.right {
 
 /* Hero Section */
 #heading {
-    position: relative;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; /* Align content to the left */
+    height: 400px; 
+    /* padding: 2rem; */
+    background-color: #f4f4f4; 
     overflow: hidden;
 }
 
-#heading .heading-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/portFinal/images/realshot.JPG");
-    background-size: cover;
+/* Left-side photo */
+.heading-background {
+    flex: 0 0 20%; 
+    height: 100%; 
+    background-image: url("/portFinal/images/realshot.jpg");
+    background-size: cover; 
     background-position: center;
-    z-index: -1;
+    margin: 0; 
+}
+
+
+#heading div {
+    flex: 1; 
+    padding-left: 2rem; 
 }
 
 #heading h1 {
-    font-size: 5rem;
-    color: #273469;
-    text-align: center;
+    font-size: 5rem; 
+    color: #273469; 
     margin: 0;
-    padding: 1rem;
-    z-index: 1;
+    padding: 0;
+    text-align: left;
+    line-height: 1.2; 
 }
 
 footer {
