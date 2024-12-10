@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #30343F;
+    overflow-x: hidden; 
+}
+
+/* Navbar and supporting elements below */
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #E4D9FF;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    /* overflow-x: hidden;
+    flex-wrap: wrap; */
+}
+
+#my_flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none; 
+    display: flex;
+    background-color: #E4D9FF;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+li a {
+    text-decoration: none; 
+    color: #1E2749; /* Neutral color for text */
+    padding: 10px 30px; 
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+li a:hover {
+    background-color: #1E2749;
+    color: #E4D9FF;
+}
+
+li a:active { 
+    background-color: #564457;
+}
+
+li.left {
+    margin-right: 0%;
+}
+
+li.right {
+    margin-left: 0%;
+}
+
+/* Navbar logo */
+
+.Center-logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Logo {
+    max-height: 35px;
+    width: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px; /* Adds space between the heading and sections */
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    margin: 10px 0;
+}
+
+/* Hero Section */
+#heading {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#heading .heading-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/portFinal/images/headshot.JPG");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#heading h1 {
+    font-size: 5rem;
+    color: #273469;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    z-index: 1;
+}
+
+footer {
+    background-color: #273469; 
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%; 
+    position: relative; 
+    margin-top: 2rem; 
+}
+
+footer .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}

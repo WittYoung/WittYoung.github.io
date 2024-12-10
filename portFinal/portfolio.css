@@ -16,7 +16,7 @@ body {
 #navbar {
     position: sticky;
     top: 0;
-    background-color: #F2E5BF;
+    background-color: #E4D9FF;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 10;
@@ -38,7 +38,7 @@ body {
 ul {
     list-style: none; 
     display: flex;
-    background-color: #F2E5BF;
+    background-color: #E4D9FF;
     margin: 0;
     padding: 10px 0;
     width: 100%;
@@ -46,13 +46,14 @@ ul {
 
 li a {
     text-decoration: none; 
-    color: #564457; /* Neutral color for text */
+    color: #1E2749; /* Neutral color for text */
     padding: 10px 30px; 
     font-family: "Sixtyfour Convergence", sans-serif;
 }
 
 li a:hover {
-    background-color: #FD8B51;
+    background-color: #1E2749;
+    color: #E4D9FF;
 }
 
 li a:active { 
@@ -75,7 +76,7 @@ li.right {
 }
 
 .Logo {
-    max-height: 25px;
+    max-height: 35px;
     width: auto;
 }
 
@@ -86,25 +87,122 @@ li.right {
 }
 
 /* Header styling */
-.header {
-    background-color: #564457; /* Changed to teal */
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-#ticketing .heading-background {
-    background-image: url("images/FY24-Season-Header-Dragon-1920x400-2.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 200px; /* Adjust height to reveal more image */
+#heading {
+    position: relative;
+    height: 400px; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Ensures no overflow */
+}
+
+#heading .heading-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures it stretches to full width */
+    height: 100%; /* Ensures it stretches to full height */
+    background-image: url("/portFinal/images/headshot.JPG");
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Places it behind the text */
+}
+
+#heading h1 {
+    font-size: 5rem; /* Increase the size of the heading */
+    color: #273469; /* Dark gray color for the heading text */
+    text-align: center; /* Keep the text centered */
+    margin: 0;
+    padding: 1rem;
+    z-index: 1; /* Ensure the text is above the background image */
+}
+
+#intro {
+    background-color: #30343F; /* Dark gray background */
+    color: #FAFAFF; /* White text for contrast */
+    padding: 4rem 2rem; /* Add padding for breathing room */
+}
+
+.intro-content {
+    max-width: 800px; /* Limit paragraph width for readability */
+    margin: 0 auto; /* Center content horizontally */
+    position: relative;
+}
+
+.intro-content h2,
+.intro-content p {
+    margin-left: -50px; /* Align both to the same off-center left position */
+}
+
+.intro-content h2 {
+    font-size: 4rem; /* Large text size for the heading */
+    text-align: left; /* Align heading text to the left */
+    margin-bottom: 1rem;
+}
+
+.intro-content p {
+    font-size: 1.25rem; /* Larger paragraph font for readability */
+    line-height: 1.6; /* Improve line spacing */
+    margin-top: 0;
+}
+
+
+
+/* Portfolio item and image styling */
+#portfolio-item {
+    text-align: center; /* Center the content */
+    margin-top: 2rem; /* Add space above */
+}
+
+#portfolio-image {
+    max-width: 100%; /* Image will not exceed the container's width */
+    max-height: 400px; /* Limit the height while maintaining the aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the box without distortion */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensures proper centering */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+
+#portfolio-caption {
+    font-size: 1.5rem; /* Caption font size */
+    color: black; /* Set caption text color to black */
+    position: relative; /* Align with other elements */
+    margin-bottom: 1rem; /* Space below caption */
+    font-weight: bold; /* Make caption text bold */
+}
+
+/* Button styling */
+#generate {
+    font-size: 2rem; /* Make button text larger */
+    padding: 1rem 2rem; /* Increase padding for a bigger button */
+    background-color: #E4D9FF; /* Button background color */
+    color: #273469; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: block; /* Make button a block-level element */
+    margin: 2rem auto; /* Center the button horizontally */
+    text-align: center; /* Ensure text is centered */
+}
+
+#generate:hover {
+    background-color: #273469; /* Change background color on hover */
+    color: #E4D9FF;
+
+}
+
+footer {
+    background-color: #273469; 
+    color: white;
     text-align: center;
-}   
+    padding: 1rem 0;
+    width: 100%; 
+    position: relative; 
+    margin-top: 2rem; 
+}
+
+footer .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}

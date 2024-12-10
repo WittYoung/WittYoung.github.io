@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Witt Young Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
-    <button id="generate">Get Random Portfolio Item</button>
+
+    <nav id="navbar">
+        <ul id = "my_flexbox">
+            <li><a href="portfolio.html">Home</a></li>
+            <li class = "left"><a href="resume.html">Resume</a></li>
+            <li class = "Center-logo"><img class="Logo" src="images/logo.png" alt="Logo"></li>
+            <li class = "right"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="heading">
+        <div class="heading-background"></div>
+        <h1>Portfolio</h1>
+    </section>
+
+    <section id="intro">
+        <div class="intro-content">
+            <h2>Hello!</h2>
+            <p>My name is Witt Young, I am a Sophomore in the Creative Technology and Design major at CU Boulder. Growing up around artistic parents and studying theater in highschool, I’ve always had a creative outlook on the world. I’ve developed many different skills throughout my time in CTD, from graphic design to physical computing, web creations, 3D modeling, and more. Being creative is a priority in my life, and I’ve been exploring so many different aspects of what it means to be creative, I am very passionate about using technology for my creations.</p>
+        </div>
+    </section>
+
+    
+
+
+    <button id="generate">Click for a Variety of Different Projects</button>
     <div id="portfolio-item">
-        <img id="portfolio-image" />
         <p id="portfolio-caption"></p>
+        <img id="portfolio-image" />
     </div>
     <script src="../portFinal/portfolio.js"></script>
+
+    <footer style="background-color: #273469;">
+        <div class="container">
+            <p>&copy; Witt Youngs stuff. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
