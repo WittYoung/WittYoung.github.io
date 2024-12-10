@@ -86,36 +86,42 @@ li.right {
     margin: 0 auto;
 }
 
-/* Header styling */
+/* Updated Heading Section */
 #heading {
-    position: relative;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Align content to the left */
     height: 400px; /* Adjust height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Ensures no overflow */
+    /* padding: 2rem; /* Add spacing around content */
+    background-color: #f4f4f4; /* Neutral background for the section */
+    overflow: hidden; /* Prevent overflow issues */
 }
 
-#heading .heading-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Ensures it stretches to full width */
-    height: 100%; /* Ensures it stretches to full height */
-    background-image: url("/portFinal/images/headshot.JPG");
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* Places it behind the text */
+/* Left-side photo */
+.heading-background {
+    flex: 0 0 20%; /* Fix the image width to 20% of the container */
+    height: 100%; /* Full height of the section */
+    background-image: url("/portFinal/images/realshot.jpg"); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    margin: 0; /* Ensure the image touches the left side */
+}
+
+/* Right-side text */
+#heading div {
+    flex: 1; /* Allow the text to take up the remaining space */
+    padding-left: 2rem; /* Add spacing between image and text */
 }
 
 #heading h1 {
-    font-size: 5rem; /* Increase the size of the heading */
-    color: #273469; /* Dark gray color for the heading text */
-    text-align: center; /* Keep the text centered */
+    font-size: 5rem; /* Make the heading text larger */
+    color: #273469; /* Dark blue text color */
     margin: 0;
-    padding: 1rem;
-    z-index: 1; /* Ensure the text is above the background image */
+    padding: 0;
+    text-align: left; /* Align text to the left */
+    line-height: 1.2; /* Tighten spacing between lines */
 }
+
 
 #intro {
     background-color: #30343F; /* Dark gray background */
@@ -135,7 +141,7 @@ li.right {
 }
 
 .intro-content h2 {
-    font-size: 4rem; /* Large text size for the heading */
+    font-size: 2rem; /* Large text size for the heading */
     text-align: left; /* Align heading text to the left */
     margin-bottom: 1rem;
 }
